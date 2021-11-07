@@ -1,0 +1,121 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: SanomatGrabApp, -apple-system, BlinkMacSystemFont, Segoe UI,
+    PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica,
+    Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+#wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+#wrapper header {
+  width: 100%;
+  margin: 0px auto;
+  /* background-color: rgb(170, 255, 227); */
+  padding: 10px 0;
+}
+#wrapper header .container-top {
+  width: 90%;
+  margin: 0px auto;
+  /* display: flex; */
+  /* justify-content: space-between;
+    align-items: center; */
+
+  display: grid;
+  grid-template-columns: 20% auto auto;
+}
+header section.logo {
+  display: flex;
+  align-items: center;
+}
+header section.logo a img {
+  width: 60%;
+}
+#wrapper header .container-top nav {
+  text-align: left;
+  padding-top: 10px;
+}
+#wrapper header .container-top nav ul {
+  display: flex;
+}
+#wrapper header .container-top nav ul li {
+  padding: 10px;
+  list-style: none;
+}
+#wrapper header .container-top nav ul li a {
+  text-decoration: none;
+  color: rgb(43, 38, 38);
+  padding: 10px;
+  /* background-color: #f7f7f7; */
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: Muli, Futura, Helvetica, Arial, sans-serif;
+  position: relative;
+}
+#wrapper header .container-top nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  height: 3px;
+  width: 100%;
+  background-color: rgb(122, 33, 6);
+  display: none;
+}
+#wrapper header .container-top nav ul li a:hover:after {
+  display: block;
+}
+#wrapper header .container-top section.menu-right {
+  display: flex;
+  align-items: center;
+}
+#wrapper header .container-top section.menu-right .cart {
+  padding: 5px;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 3px;
+  margin: 0 10px;
+  position: relative;
+}
+#wrapper header .container-top section.menu-right .cart span {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  font-weight: 500;
+  color: rgb(122, 115, 115);
+}
+#wrapper header .container-top section.menu-right .cart:hover {
+  box-shadow: 0px 0px 3px 0px grey;
+  cursor: pointer;
+}
+#wrapper header .container-top section.menu-right .cart a {
+  padding: 5px;
+  text-decoration: none;
+}
+#wrapper header .container-top section.menu-right .login {
+  padding: 7px;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 3px;
+  margin: 0 10px;
+}
+#wrapper header .container-top section.menu-right .login:hover {
+  box-shadow: 0px 0px 3px 0px grey;
+  cursor: pointer;
+}
+#wrapper header .container-top section.menu-right .login a {
+  padding: 5px;
+  text-decoration: none;
+  color: #676767;
+  font-weight: 500;
+}
+#wrapper header div.container{
+  padding: 10px 0;
+}
+/* END HEADER  */
+main .container{
+  padding: 2rem 0;
+}
+.panel.panel-primary{
+  width: 90%;
+  margin: 0px auto;
+}

@@ -1,0 +1,73 @@
+
+
+
+
+TÀI KHOẢN ADMIN:
+username: AdminThanh 
+password: thanh1010
+
+
+
+
+ALTER TABLE `orders` ADD FOREIGN KEY (`order_date`) REFERENCES `orders`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+ALTER TABLE `product` ADD  FOREIGN KEY (`id_category`) REFERENCES `category`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+================================================
+- Table category
+create table category (
+	id int primary key auto_increment,
+	name varchar(50) not null,
+	created_at datetime,
+	updated_at datetime
+)
+- Table Product
+create table product (
+	id int primary key auto_increment,
+	title varchar(200) not null,
+	price float,
+	thumbnail varchar(500),
+	content longtext,
+	id_category int references category (id),
+	created_at datetime,
+	updated_at datetime
+)
+
+- Table orders
+create table orders (
+ id int primary key auto_increment,
+ fullname varchar(100),
+ phone_number varchar(20),
+ email varchar(150),
+ address varchar(200),
+ note varchar(255),
+ order_date datetime
+);
+- Table order_details
+create table order_details (
+ id int primary key auto_increment,
+ order_id int references orders (id),
+ product_id int references products (id),
+ num int,
+ price float
+)
+- Table user
+create table user(
+	id_user int primary key auto_increment,
+	hoten varchar(255),
+	username varchar(255),
+	password varchar(255),
+	phone varchar(28),
+	email varchar(255)
+)
+=======================
+Làm cart.php
+    -> cookie thời gian lưu lâu
+    -> id sp + số lượng sp
+    cart: {
+        'id': 1;
+        'sl': 3;
+    },{
+       'id': 2;
+        'sl': 4; 
+    }
+    -> session thời gian lưu ngắn
+ 

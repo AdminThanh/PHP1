@@ -1,0 +1,155 @@
+section.main section.oder-product {
+  display: grid;
+  grid-template-columns: auto 30%;
+}
+section.main section.oder-product .link a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+section.main section.oder-product .title h1 {
+  font-size: 35px;
+  font-family: 'Encode Sans SC', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  color: black;
+}
+section.main section.oder-product .title .main-order .box {
+  display: flex;
+}
+section.main section.oder-product .title .main-order .box img {
+  width: 50%;
+}
+section.main section.oder-product .title .main-order .box .about p {
+  font-size: 17px;
+  color: rgb(44, 38, 38);
+  font-weight: 500;
+}
+section.main section.oder-product .title .main-order .box .about .size {
+  display: flex;
+}
+section.main section.oder-product .title .main-order .box .about .size p {
+  font-weight: 500;
+}
+section.main section.oder-product .title .main-order .box .about .size ul {
+  display: flex;
+  list-style: none;
+}
+section.main section.oder-product .title .main-order .box .about .size ul li a {
+  padding: 5px 10px;
+  border: 1px solid;
+  margin: 0 5px;
+  text-decoration: none;
+  color: black;
+}
+section.main section.oder-product .title .main-order .box .number {
+}
+section.main
+  section.oder-product
+  .title
+  .main-order
+  .box
+  .about
+  .number
+  .number-buy {
+  font-weight: 500;
+}
+section.main section.oder-product .title .main-order .box .about .price {
+  font-weight: 500;
+}
+section.main section.oder-product .title .main-order .box .about .price .none {
+  display: none;
+}
+section.main section.oder-product .title .main-order .box .about .price span {
+  color: red;
+  font-weight: 600;
+}
+section.main section.oder-product .title .main-order .box .about .buy-now {
+  padding: 13px 30px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 3px;
+  color: white;
+  border: none;
+}
+section.main
+  section.oder-product
+  .title
+  .main-order
+  .box
+  .about
+  .buy-now:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+section.main section.oder-product .title .main-order .box .about .add-cart {
+  padding: 13px 30px;
+  background-color: rgba(255, 68, 35, 0.856);
+  border-radius: 3px;
+  color: white;
+  border: none;
+
+}
+section.main section.oder-product .title .main-order .box .about .add-cart i {
+  padding: 0 5px;
+}
+section.main
+  section.oder-product
+  .title
+  .main-order
+  .box
+  .about
+  .add-cart:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+/* END SẢN PHẨM  */
+aside h1 {
+  font-size: 30px;
+  margin: 0px;
+  padding: 0px;
+}
+aside .row {
+  display: flex;
+  flex-flow: column;
+}
+aside .row .col {
+  border: 1px solid grey;
+  margin: 20px 0px 5px 0px;
+  border-radius: 5px;
+}
+aside .row .col a {
+  display: flex;
+}
+aside .row .col img {
+  width: 30%;
+}
+aside .row .col a .about .title {
+  color: black;
+}
+aside .row .col a .about .title p {
+  padding: 0;
+  margin-top: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Encode Sans SC', sans-serif;
+}
+aside .row .col a .about .title span {
+  font-weight:bold;
+  color: red;
+  font-family: 'Bebas Neue', cursive ;
+}
+/* END Gợi ý cho bạn */
+section.comment {
+  margin: 5rem 0;
+  border-top: 1px solid black;
+}
+section.comment .container {
+  display: grid;
+  grid-template-columns: auto 30%;
+}
+section.comment .container .post {
+  display: flex;
+  flex-flow: column;
+}
+
+/* END COMMENT */
